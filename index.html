@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<p> Grade Calculator </p>
+<table border="1" cellspacing="10" cellpadding="20" align="Center" >
+    <tr>
+        <td><div>Homework</div><input type="text" id="homework" value="80,90" size="25"></td>
+        <td><div>Homework Weight</div><input type="text" id="homeworkWeight" value="30" size="25"></td>
+    </tr>
+
+    <tr>
+        <td><div>Classwork</div><input type="text" id="classwork" value="60,75" size="25"></td>
+        <td><div>Classwork Weight</div><input type="text" id="classworkWeight" value="15" size="25"></td>
+    </tr>
+
+    <tr>
+        <td><div>Participation</div><input type="text" id="participation" value="74,43" size="25"></td>
+        <td><div>Participation Weight</div><input type="text" id="participationWeight" value="40" size="25"></td>
+    </tr>
+
+    <tr>
+        <td><div>Assessments</div><input type="text" id="assessment" value="90,100" size="25"></td>
+        <td><div>Assessment Weight</div><input type="text" id="assessmentWeight" value="15" size="25"></td>
+    </tr>
+</table>
+
+<p>
+    Total Weight must add up to 100%
+</p>
+<div id="percentage"></div>
+
+<div id="finalGrade"></div>
+
+<h2>
+    <button id="myButton" onclick="calculateCurrentGrade()">Calculate Grade</button>
+</h2>
+
+
+<table  border="1" cellspacing="20" cellpadding="20" align="Center">
+    <tr>
+        <td><div>Grade Desired</div><input type="text" id="gradeDesired" value="90" size="25"></td>
+        <td><div>Final Weight</div><input type="text" id="finalWeight" value="15" size="25"></td>
+    </tr>
+</table>
+
+<div id="finalGradeNeeded"></div>
+
+
+<h3>
+    <button id="gradeButton" onclick="calculateGradeNeeded()">Grade Desired</button>
+</h3>
+
+
+
+
+
+
+</body>
+</html>
